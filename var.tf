@@ -26,3 +26,24 @@ variable "sample_list" {
 output "sample_list" {
   value = var.sample_list[1]
 }
+
+variable "sample_dist" {
+  default = {
+    number = 100
+    string2 = "usha"
+    number2 = 456
+    boolean = true
+  }
+}
+
+output "sample_dist_num" {
+  value = var.sample_dist["number"]
+}
+
+output "sample_dist_str" {
+  value = var.sample_dist[string2]
+}
+
+output "sample_dist_bool" {
+  value = var.sample_dist["boolean"]
+}
