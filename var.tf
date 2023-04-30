@@ -47,3 +47,4 @@ output "sample_dist_str" {
 output "sample_dist_bool" {
   value = var.sample_dist["boolean"]
 }
+variable "env" {}
