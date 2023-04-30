@@ -41,7 +41,7 @@ output "sample_dist_num" {
 }
 
 output "sample_dist_str" {
-  value = var.sample_dist[string2]
+  value = var.sample_dist["string2"]
 }
 
 output "sample_dist_bool" {
