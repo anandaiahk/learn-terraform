@@ -18,9 +18,9 @@ variable "sample_boolean" {
 variable "sample_list" {
   default = [
     100,
-    "anand"
-    true
-    123
+    "anand",
+    true,
+    123,
   ]
 }
 output "sample_list" {
