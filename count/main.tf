@@ -2,10 +2,10 @@ resource "null_resource" "null" {
   count = 10
 }
 resource "null_resource" "fruits" {
-  count = length(var.list)
+  count = length(var.fruits)
 }
 
-variable "list" {
+variable "fruits" {
   default = [ "apple", "banana", "mango"]
 
 }
