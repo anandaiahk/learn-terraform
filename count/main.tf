@@ -8,7 +8,7 @@ resource "null_resource" "fruits" {
     command = "echo fruit name - ${var.fruits[count.index]}"
   }
 
-}|
+}
 variable "fruits" {
   default = [ "apple", "banana", "mango"]
 
