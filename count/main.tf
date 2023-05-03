@@ -4,12 +4,12 @@ resource "null_resource" "fruits" {
   for_each = var.fruits
 
   provisioner "local-exec" {
-    command = "echo fruit name - ${var.fruits[each.key]}"
+    command = "echo fruit name - ${each.key} - ${each.value["count"]}"
    // command = "echo fruit name - ${var.fruits[count.index]}"
   }
 
 }
-variable "fruits" {
+variable "fruits1" {
   default = {
     apple = {
       name = "apple"
@@ -22,6 +22,14 @@ variable "fruits" {
     banana = {
       name = "babana"
       count = 134
+    }
+  }
+  variable "fruits" {
+    default = {
+      apple  = 10
+      orange = 200
+      banana = 134
+    }
     }
   }
 
