@@ -9,7 +9,7 @@ resource "null_resource" "fruits" {
   }
 
 }
-variable "fruits" {
+variable "fruits1" {
   default = {
     apple = {
       name  = "apple"
